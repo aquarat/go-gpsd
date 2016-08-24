@@ -1,10 +1,11 @@
 # go-gpsd
 
-*GPSD client for Go.*
+GPSD client for Go.
+*Forked from github.com/stratoberry/go-gpsd*
 
 ## Installation
 
-<pre><code># go get github.com/stratoberry/go-gpsd</code></pre>
+<pre><code># go get github.com/aquarat/go-gpsd</code></pre>
 
 go-gpsd has no external dependencies.
 
@@ -12,7 +13,7 @@ go-gpsd has no external dependencies.
 
 go-gpsd is a streaming client for GPSD's JSON service and as such can be used only in async manner unlike clients for other languages which support both async and sync modes.
 
-<pre><code>import ("github.com/stratoberry/go-gpsd")
+<pre><code>import ("github.com/aquarat/go-gpsd")
 
 func main() {
 	gps := gpsd.Dial("localhost:2947")
