@@ -167,7 +167,7 @@ func Dial(address string) (session *Session, err error) {
   session.socket, err = net.Dial("tcp4", address)
 
   session.reader = bufio.NewReader(session.socket)
-  line, _ := session.reader.ReadString('\n')
+  session.reader.ReadString('\n')
   session.filters = make(map[string][]Filter)
 
   return
